@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener-connection host="localhost" port="9955" />
 	</http:listener-config>
 	<flow name="sampleFlow" doc:id="07b2a5b3-114a-44dc-9536-4cb2bc3b2f9b" >
-		<http:listener doc:name="Listener" doc:id="0b13bb8c-9b8a-403b-ba69-e8b54ba36d59" config-ref="HTTP_Listener_config" path="/AttributePath"/>
-		<set-payload value='"This is a new sample project"' doc:name="Set Payload" doc:id="6e8622f6-ad3f-49d2-bd1c-7a6bbf1f7c4b" />
+		<http:listener doc:name="Listener" doc:id="0b13bb8c-9b8a-403b-ba69-e8b54ba36d59" config-ref="HTTP_Listener_config" path="/AttributePaths"/>
+		<set-payload value='"new updated messege This is a new sample project"' doc:name="Set Payload" doc:id="6e8622f6-ad3f-49d2-bd1c-7a6bbf1f7c4b" />
 	</flow>
 </mule>
